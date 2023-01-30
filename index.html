@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Lucky Button</title>
+</head>
+
+<body onload="getLuckyButton()">
+    <div class="container">
+        <div class="card text-center">
+            <div class="card-header">Thank you for shopping with us!</div>
+            <div class="card-body">
+                <h5 class="card-title">we have a big surprise for you</h5>
+                <p class="card-text">we celebrate 5 years with you, click one of the buttons and you can get a 50%
+                    discount on your next order</p>
+                <div class="btn-group me-2" role="group" aria-label="Second group">
+                    <button id="1" type="button" class="btn btn-success" onclick="getMessage(this.id)">1</button>
+                    <button id="2" type="button" class="btn btn-success" onclick="getMessage(this.id)">2</button>
+                    <button id="3" type="button" class="btn btn-success" onclick="getMessage(this.id)">3</button>
+                </div>
+            </div>
+            <div id="message">Succes!</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
