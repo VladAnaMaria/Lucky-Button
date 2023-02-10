@@ -9,7 +9,7 @@
     <title>Lucky Button</title>
 </head>
 
-<body onload="getLuckyButton()">
+<body onload="getWinNumber()">
     <div class="container">
         <div class="card text-center">
             <div class="card-header">Thank you for shopping with us!</div>
@@ -18,9 +18,9 @@
                 <p class="card-text">we celebrate 5 years with you, click one of the buttons and you can get a 50%
                     discount on your next order</p>
                 <div class="btn-group me-2" role="group" aria-label="Second group">
-                    <button id="1" type="button" class="btn btn-success" onclick="getMessage(this.id)">1</button>
-                    <button id="2" type="button" class="btn btn-success" onclick="getMessage(this.id)">2</button>
-                    <button id="3" type="button" class="btn btn-success" onclick="getMessage(this.id)">3</button>
+                    <button id="1" type="button" class="btn btn-success" onclick="checkButton(this.id)">1</button>
+                    <button id="2" type="button" class="btn btn-success" onclick="checkButton(this.id)">2</button>
+                    <button id="3" type="button" class="btn btn-success" onclick="checkButton(this.id)">3</button>
                 </div>
             </div>
             <div id="message">Succes!</div>
