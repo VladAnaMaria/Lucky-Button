@@ -1,8 +1,5 @@
-var winNumber = 0
-function getWinNumber() {
-    winNumber = Math.floor(Math.random() * 3 + 1);
-}
 function checkButton(clicked_id) {
+    let winNumber = Math.floor(Math.random() * 3 + 1);
     if (clicked_id == winNumber) {
         document.getElementById("message").innerHTML="Congratulations! You won a 50% discount code!";
         document.getElementById("message").style="color:#090;padding:10px;border:1px solid #bbb;";
